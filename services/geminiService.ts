@@ -31,7 +31,7 @@ export async function generateGameData(prompt: string): Promise<GameData> {
       }),
       // Generate Questions
       ai.models.generateContent({
-        model: 'gemini-2.5-flash',
+        model: 'gemini-2.5-pro',
         contents: `Generate 5 creative and open-ended questions related to the theme: "${prompt}". These questions will be used for a game to unblur an image. Return the response as a valid JSON array of strings. Do not include any other text or markdown formatting.`,
         config: {
           responseMimeType: "application/json",
